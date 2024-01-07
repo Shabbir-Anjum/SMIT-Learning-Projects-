@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body {
+  font-family: 'Roboto';
+  min-height: 100vh;
+}
+body::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/3.jpeg) center/cover no-repeat;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.name {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+}
+.navbar ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    border-top: 1px solid rgb(35, 35, 35);
+    border-bottom: 1px solid rgb(35, 35, 35);
+    padding: 1em;
+    background-color: rgba(68, 59, 59, 0.5);
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 10px;
+    opacity: 100%;
+
+}
+.navbar ul li a:hover{
+  color: #fff;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    padding: 8em;
+    flex-direction: column;
+}
+.home-text{
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    font-size: 2em;
+}
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5px;
+  height: 20em;
+}
+
+.images div {
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.images img {
+  width: 20em;
+  height: 17em;
+
+  object-fit: cover;
+  display: block; 
+}
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 0.3px solid white;  
+    background-color: transparent; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .button a{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  .button:hover {
+    background-color: #4c434c;
+    opacity: 50%;
+    
+  }
+  .button:hover a{
+    color: #fff;
+  }
+  .footer{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #4c434c;
+    align-items: center;
+    color: #ffffff;
+  }
+ 
