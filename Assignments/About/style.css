@@ -71,4 +71,42 @@ body{
 }
 .contactinfo{
     padding-top: 20px;
+    width: 110%;
 }
+.title{
+    color: rgb(255, 255, 255);
+
+}
+.contactinfo ul{
+    position: relative;
+    width: 21em;
+    margin-top: 5px;
+  
+}
+.contactinfo ul li{
+    position: relative;
+    margin: 10px 0px;
+    list-style: none;
+    
+    padding-right: 19px; 
+    color: #ffffff;
+}
+.icon{
+    color: #04d8fe;
+    font-size: 19px;
+    width: 30px;
+    margin-right: 0.3em;
+}
+.education ul li h3{
+    padding-top: 2px;
+}
+.education ul li h4{
+    padding-top: 2px;
+    font-size: small;
+    color: #ddd6d6;
+}
+.education ul li h5{
+    padding-top: 2px;
+    color: #04d8fe;
+}
+
