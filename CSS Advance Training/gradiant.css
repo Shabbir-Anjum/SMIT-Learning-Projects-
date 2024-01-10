@@ -1,0 +1,17 @@
+.gradiant{
+    width: 700px;
+    height: 200px;
+    background-image: linear-gradient(to left,white, orange, green, red);
+}
+.gradiant1{
+    margin-top: 40px;
+    width: 700px;
+    height: 200px;
+    background-image: linear-gradient(to top, red, white, orange);
+}
+.gradiant2{
+    margin-top: 40px;
+    width: 700px;
+    height: 200px;
+    background-image: radial-gradient( red, black, orange);
+}
