@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            width: 100vh;
+            height: 100vh;
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            animation-name: move;
+            animation-duration: 9s;
+            animation-timing-function: ease-in-out;
+            position: relative;
+            background-color: blue;
+            animation-iteration-count: 4;
+            animation-fill-mode:forwards
+        }
+        @keyframes move{
+            0%{
+                top: 0;
+                left: 0;
+                background-color: aqua;
+            }
+            20%{
+                top: 400px;
+                left: 20%;
+                background-color: red;
+                transform: rotate(360deg);
+            }
+            50%{
+                top: 700px;
+                left: 40%;
+                background-color: rgb(26, 199, 0);
+                transform: scale(2);
+            }
+            75%{
+                top: 900px;
+                left: 50%;
+                background-color: rgb(26, 199, 0);
+                transform: skew(290deg);
+            }
+            100%{
+                top: 1300px;
+                left: 60%;
+                background-color: rgb(245, 241, 2);
+                transform: translate(123px,103px );
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+</body>
+</html>
