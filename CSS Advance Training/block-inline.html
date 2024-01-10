@@ -12,6 +12,7 @@
   height: 100px;
   background-color: #e74c3c;
   border: 4px solid green;
+  position: relative;
 
 }
 .icon {
@@ -26,7 +27,6 @@
 img{
     width:30%;
     height: 20%;
-    
     display: block;
     margin: auto;
     box-shadow: 2px 2px 3px green, -2px -1px 3px rgb(255, 238, 2);
@@ -37,7 +37,13 @@ img{
     height: 100%;
 }
 .responsive-box::before{
-  
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  background-color: #02b523;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 84% 88%, 77% 58%, 49% 61%, 46% 39%, 24% 29%);
 }
 </style>
 </head>
