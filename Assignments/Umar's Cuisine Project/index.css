@@ -62,6 +62,9 @@ body::before {
 .navbar ul li a:hover{
   color: #fff;
 }
+.navbar ul li a:active{
+  color: #64da24;
+}
 .home{
     display: flex;
     justify-content: center;
