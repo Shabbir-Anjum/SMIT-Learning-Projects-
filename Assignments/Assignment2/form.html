@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input{
+            display: inline-block;
+            width: 50%;
+        }
+        span{
+            display: inline-block;
+            width: 10%;
+        }
+        div{
+            margin: 12px;
+            padding: 2px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <form action="submit.js">
+        <label for="f-name">
+            <div>
+                <span>First Name</span>
+                <input class="input" id="f-name" type="text" placeholder="Enter Your First Name">
+            </div>
+        </label>
+        <label for="l-name">
+            <div>
+                <span>Last Name</span>
+                <input class="input" id="l-name" type="text" placeholder="Enter Your Last Name">
+            </div>
+        </label>
+        <label for="email">
+            <div>
+                <span>Email</span>
+                <input class="input" id="email" type="email" placeholder="Enter Your Email">
+            </div>
+        </label>
+        <label for="mobile">
+            <div>
+                <span>Mobile</span>
+                <input class="input" id="mobile" type="number" placeholder="Enter Your Number">
+            </div>
+        </label>
+        <div>
+            <label for="date">
+                <span>Date of Birth</span>
+                <input class="input" id="date" type="date" placeholder="mm/dd/yyyy">
+        </div>
+        <div>
+            <label for="gender">
+                <span>Gender</span>
+                <input id="gender" type="radio" > Male
+                <input id="gender" type="radio" > Female
+        </div>
+        <div>
+            <label for="text">
+                <span>Address</span>
+                <textarea class="input" name="text" id="text" cols="0" rows="0"></textarea> 
+        </div>
+        </label>
+    </form>
+</body>
+
+</html>
