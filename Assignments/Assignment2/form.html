@@ -6,24 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .input{
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(205, 205, 205);
+        }
+        .input {
             display: inline-block;
             width: 50%;
+            padding: 10px;
+            border-radius: 4%;
+            border: 1px solid rgb(176, 172, 172);
+            outline: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        span{
+
+        span {
             display: inline-block;
+            text-transform: uppercase;
+            margin: 0px 40px ;
             width: 10%;
-            
+            cursor: pointer;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        div{
+
+        div {
             margin: 12px;
             padding: 2px;
         }
-       
+        .button{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(29, 113, 56);
+            border-radius: 2%;
+            font-size: larger;
+            color: white;
+            border: 0.2px transparent;
+            margin: 9px 45px;
+            padding: 10px 20px;
+            transition: all 1s ease-in-out;
+        }
+        .button:hover{
+            background-color: green;
+            font-size: x-large;
+        }
+        .heading{
+            text-align: center;
+            color: brown;
+            margin: 15px;
+           
+        }
     </style>
 </head>
 
 <body>
+    <header>
+        <h1 class="heading">Student Registration Form</h1>
+    </header>
     <form action="submit.js">
         <label for="f-name">
             <div>
@@ -57,18 +98,62 @@
         <div>
             <label for="gender">
                 <span>Gender</span>
-                <input id="gender" type="radio" > Male
-                <input id="gender" type="radio" > Female
+                <input id="gender" type="radio"> Male
+                <input id="gender" type="radio"> Female
             </label>
         </div>
        
         <div>
             <label for="text">
                 <span>Address</span>
-                <textarea class="input" name="text" id="text" cols="30" rows="10"></textarea> 
+                <textarea class="input" name="text" id="text" cols="30" rows="6"></textarea>
+            </label>
         </div>
-        </label>
-      
+        <div>
+            <label for="city">
+                <span>City</span>
+                <input type="text" class="input" id="city">
+            </label>
+        </div>
+        <div>
+            <label for="area">
+                <span>Area Pin</span>
+                <input type="number" class="input" id="area">
+            </label>
+        </div>
+       <div>
+            <label for="state">
+                <span>state Pin</span>
+                <input type="text" class="input" id="state">
+            </label>
+        </div>
+        <div>
+            <label for="qualification">
+                <span>qualification</span>
+                <select name="data" id="qualification">
+                    <option value="Matric" aria-placeholder="qualification">Matric</option>
+                    <option value="FSC">FSC</option>
+                    <option value="BS">BS</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="specialization">
+                <span>specialization</span>
+                <input type="checkbox"> Computer science 
+                <input type="checkbox"> Information Technology 
+                <input type="checkbox"> Computer Architecture
+                <input type="checkbox"> Tele Communicatin
+            </label>
+        </div>
+        <div>
+            <label for="password">
+                <span>Password</span>
+                <input type="password" id="password" class="input">
+            </label>
+        </div>
+        <button class="button">Registered</button>
+   
     </form>
 </body>
 

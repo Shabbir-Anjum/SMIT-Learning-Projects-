@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+       flex-basis: auto;
+        align-content: center;
+
+      }
+      .box{
+        width: 300px;
+        height: 300px;
+        background-color: brown;
+        margin: 40px;
+      }
+      .s{
+        flex-shrink: 7;
+        font-size: 150%;
+        order: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="box s">Anjum</div>
+    <div class="box">Shabbir</div>
+    <div class="box">Shabbir</div>
+</div>
+  </body>
+</html>
