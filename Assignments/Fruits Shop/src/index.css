@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+  body{
+    @apply font-Roboto ;
+  }
+  
+}
+@layer utilities{
+  .btn{
+    @apply p-4 text-green-300;
+  }
+  .title{
+    @apply text-5xl font-bold font-Kanit
+  }
+  .btn{
+    @apply py-1 px-4 rounded-sm text-white;
+  }
+  .heading{
+    @apply text-4xl py-3 font-bold font-Kanit;
+  }
+  .cardTitle{
+    @apply text-orange-400  font-Kanit text-2xl;
+  }
+}
