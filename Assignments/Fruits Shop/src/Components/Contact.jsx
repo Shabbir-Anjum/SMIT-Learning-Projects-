@@ -7,6 +7,7 @@ export default function Contact() {
     <div className="">
           <h2 className="heading">Contact Us</h2>
 
+
         <form action="submit.js" className='flex flex-col gap-8  w-[400%] '>
            
             <input type="text" placeholder='ENTER' className='border-b outline-none' />
@@ -15,6 +16,7 @@ export default function Contact() {
             <input type="email" placeholder='EMAIL' className='border-b outline-none' />
             <input type="text" placeholder='MESSEGE' className='border-b outline-none' />
             <input type="submit"  className='btn bg-OrangeColor w-36 outline-none'/>
+  
         </form>
 
         </div>
